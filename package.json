@@ -1,0 +1,25 @@
+{
+  "name": "airline-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camilodiaz37/airline-dapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/camilodiaz37/airline-dapp/issues"
+  },
+  "homepage": "https://github.com/camilodiaz37/airline-dapp#readme",
+  "devDependencies": {
+    "truffle-hdwallet-provider": "^1.0.17"
+  }
+}
