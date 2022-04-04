@@ -28,8 +28,8 @@ _enter on client_
 
 ```
 C://users/user/desktop/airline-dapp> cd client
+```
 _install dependencies_
-
 ```
 C://users/user/desktop/airline-dapp> npm install
 ```
