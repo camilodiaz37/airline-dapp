@@ -13,7 +13,7 @@ contract Airline {
         uint256 price;
     }
 
-    uint256 etherPerPoint = 0.5 ether;
+    uint256 etherPerPoint = 0.0005 ether;
 
     Flight[] public flights;
 
@@ -29,9 +29,9 @@ contract Airline {
 
     constructor() public {
         owner = msg.sender;
-        flights.push(Flight("Tokio", 4 ether));
-        flights.push(Flight("Munich", 3 ether));
-        flights.push(Flight("Madrid", 3 ether));
+        flights.push(Flight("Tokio", 0.004 ether));
+        flights.push(Flight("Munich", 0.003 ether));
+        flights.push(Flight("Madrid", 0.003 ether));
     }
 
     function buyFlight(uint256 flightIndex) public payable {

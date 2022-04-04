@@ -55,13 +55,17 @@ const useContractMethods = (contract, web3, address) => {
       getFligths();
       getLoyaltyPoints();
       getYourFlights()
+    }else{
+      setFlights([]);
+      setYourFlights([]);
+      setLoyaltyPoints(0);
     }
   }, [contract, web3, address]);
 
   return {
     flights,
     loyaltyPoints,
-    refundableEther: (loyaltyPoints || 0) * 0.5,
+    refundableEther: (loyaltyPoints || 0) * 0.0005,
     buyFlight,
     yourFlights,
     redeemLoyaltyPoints

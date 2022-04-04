@@ -1,7 +1,7 @@
 const path = require("path");
-const HDWalletProvider = require("truffle-hdwallet-provider");
+const HDWalletProvider = require("@truffle/hdwallet-provider");
 
-const mnemonic = "scorpion reopen wash frozen caught decrease turtle offer dolphin early chef tonight"
+const mnemonic = "YOUR_12_WORDS_MNEMONIC_HERE";
 
 module.exports = {
   // See <http://truffleframework.com/docs/advanced/configuration>
@@ -14,10 +14,11 @@ module.exports = {
       network_id:'*',
       gas:5000000
     },
-    rapsten: {
-      provider: () => new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/67e1b5e4e1fb401ea6e8c8659446d6d7"),
-      network_id:3,
-
+    ropsten: {
+      provider: function() {
+        return new HDWalletProvider(mnemonic, "https://ropsten.infura.io/v3/67e1b5e4e1fb401ea6e8c8659446d6d7")
+      },
+      network_id: 3
     }
   }
 };

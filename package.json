@@ -19,7 +19,7 @@
     "url": "https://github.com/camilodiaz37/airline-dapp/issues"
   },
   "homepage": "https://github.com/camilodiaz37/airline-dapp#readme",
-  "devDependencies": {
-    "truffle-hdwallet-provider": "^1.0.17"
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.4"
   }
 }
